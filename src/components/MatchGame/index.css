@@ -1,0 +1,52 @@
+* {
+  font-family: 'Roboto';
+}
+
+.match-game-container {
+  min-height: 100vh;
+}
+
+.game-bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px;
+}
+
+.match-image {
+  width: 50%;
+  border-radius: 5px;
+}
+
+.tabs-container {
+  padding-left: 0;
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.thumbnails-container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .match-image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .tabs-container {
+    width: 60%;
+  }
+
+  .thumbnails-container {
+    width: 100%;
+    margin-left: 0;
+  }
+}
